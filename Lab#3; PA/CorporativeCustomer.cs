@@ -8,12 +8,14 @@ namespace Lab_3__PA
 {
     public class CorporativeCustomer : Customers
     {
-        public double AditionalDiscount { get; set; }
-        public int AsociatedVehicle { get; set; }
-        public CorporativeCustomer(string name, string email, string address, double aditionaldiscount, int asociatedvehicle) : base (name, email, address)
+        public List<CorporativeVehicle> Vehicles { get; set; } = new List<CorporativeVehicle>();
+        public CorporativeCustomer(string name, string email, string address, string type) : base (name, email, address, type)
         {
-            AditionalDiscount = aditionaldiscount;
-            AsociatedVehicle = asociatedvehicle;
+        }
+        public override double GetDiscount()
+        {
+            base.GetDiscount();
+            return 0.20;
         }
     }
 }

@@ -8,10 +8,13 @@ namespace Lab_3__PA
 {
     public class VIPCustomer : Customers
     {
-        public double SpecialDiscount { get; set; }
-        public VIPCustomer(string name, string email, string address, double specialDiscount) : base (name, email, address)
+        public VIPCustomer(string name, string email, string address, string type) : base (name, email, address, type)
         {
-            SpecialDiscount = specialDiscount;
+        }
+        public override double GetDiscount()
+        {
+            base.GetDiscount();
+            return 0.10;
         }
     }
 }

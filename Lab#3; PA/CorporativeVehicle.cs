@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab_3__PA
 {
-    public class CorporativeVehicle : CorporativeCustomer
+    public class CorporativeVehicle : Vehicles
     {
-        public CorporativeVehicle()
+        public CorporativeVehicle(string plate, string model, string fuel, string type) : base(plate, model, fuel, type)
         {
-            
         }
     }
 }

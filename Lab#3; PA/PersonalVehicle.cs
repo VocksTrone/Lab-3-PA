@@ -8,7 +8,7 @@ namespace Lab_3__PA
 {
     public class PersonalVehicle : Vehicles
     {
-        public PersonalVehicle(string plate, string model, string fuel) : base(plate, model, fuel)
+        public PersonalVehicle(string plate, string model, string fuel, string type) : base(plate, model, fuel, type)
         {
         }
     }
