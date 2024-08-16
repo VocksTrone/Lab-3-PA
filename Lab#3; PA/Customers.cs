@@ -96,15 +96,15 @@ namespace Lab_3__PA
             Customers customer = customersList.Find(p => p.Name == name);
             if (name != null)
             {
-                Console.WriteLine($"Placa: {customer.Name}");
-                Console.WriteLine($"Modelo: {customer.Email}");
-                Console.WriteLine($"Tipo de Combustible: {customer.Address}");
-                Console.WriteLine($"Tipo de Vehículo: {customer.Type}");
+                Console.WriteLine($"Nombre: {customer.Name}");
+                Console.WriteLine($"Email: {customer.Email}");
+                Console.WriteLine($"Dirección: {customer.Address}");
+                Console.WriteLine($"Tipo de Cliente: {customer.Type}");
                 Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Vehículo Inexistente");
+                Console.WriteLine("Cliente Inexistente");
                 Console.ReadKey();
             }
         }
